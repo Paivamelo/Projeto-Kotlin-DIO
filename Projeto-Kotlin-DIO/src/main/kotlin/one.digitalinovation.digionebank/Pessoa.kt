@@ -5,6 +5,10 @@ class Pessoa {
     var cpf = "489.183.707-17"
     private  set
 
+    constructor()
+
+    fun unirNomeCpf() = "$nome e $cpf"
+
     //inner class Endereco{
         //var rua: String = "Rua teste"
   //  }
@@ -13,8 +17,7 @@ class Pessoa {
 fun main(){
     val victor = Pessoa()
 
-    println(victor.nome)
-    println(victor.cpf)
+    println(victor.unirNomeCpf())
 
     //println(victor.Endereco)
 }
